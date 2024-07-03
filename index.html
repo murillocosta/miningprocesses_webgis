@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Processos Minerários - Nimbus Insights</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+  </head>
+  <body>
+    <div id="filter-panel">
+      <h2>Filtros</h2>
+      <label for="search-name">Buscar por nome:</label>
+      <input type="text" id="search-name" />
+
+      <label for="search-id">ID:</label>
+      <input type="text" id="search-id" />
+
+      <label for="search-processo">Processo:</label>
+      <input type="text" id="search-processo" />
+
+      <label for="search-ano">Ano:</label>
+      <select id="search-ano" placeholder="Ano"></select>
+
+      <label for="search-fase">Fase:</label>
+      <input type="text" id="search-fase" />
+
+      <label for="search-subs">Substância:</label>
+      <input type="text" id="search-subs" />
+
+      <label for="search-uso">Uso:</label>
+      <input type="text" id="search-uso" />
+
+      <label for="search-uf">UF:</label>
+      <input type="text" id="search-uf" />
+
+      <label for="search-fid">FID:</label>
+      <input type="number" id="search-fid" />
+
+      <button id="apply-filters">Aplicar Filtros</button>
+    </div>
+
+    <div id="map"></div>
+
+    <script src="src/main.js"></script>
+    <script src="src/dynamicYearInput.js"></script>
+  </body>
+</html>

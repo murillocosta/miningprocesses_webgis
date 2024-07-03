@@ -1,0 +1,63 @@
+:root {
+  --azul-escuro: #012a49;
+  --azul-claro: #76dfff;
+  --azul-mediano: #3495c8;
+  --mostarda: #ffbf00;
+  --branco: #fffffd;
+}
+
+body {
+  display: flex;
+  margin: 0;
+  height: 100vh; /* Ajusta a altura para ocupar a tela inteira */
+}
+
+#filter-panel {
+  height: 100%;
+  width: 25%; /* Largura do painel de filtros */
+  background-color: var(--azul-escuro); /* Cor de fundo do painel */
+  padding: 20px; /* Espaçamento interno aumentado */
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+  color: var(--branco); /* Cor do texto */
+  font-family: Arial, sans-serif; /* Fonte do texto */
+}
+
+#map {
+  height: 100%;
+  width: 75%; /* Ajuste a largura do mapa */
+}
+
+h2 {
+  color: var(--mostarda); /* Cor do título */
+  margin-bottom: 15px; /* Margem inferior para separar dos filtros */
+}
+
+label {
+  display: block;
+  margin-bottom: 8px; /* Margem inferior para separar os labels */
+}
+
+input[type="text"],
+input[type="number"],
+select {
+  width: calc(100% - 2 * 10px); /* 100% menos o dobro do padding */
+  padding: 0.5rem;
+  margin-bottom: 15px;
+  border: 1px solid var(--azul-claro);
+  border-radius: 4px;
+  box-sizing: border-box; /* Garante que o padding não aumente o tamanho total */
+}
+
+button {
+  width: 80%;
+  padding: 10px;
+  background-color: var(--azul-mediano);
+  color: var(--branco);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--azul-claro);
+}
