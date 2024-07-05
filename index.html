@@ -21,31 +21,102 @@
     <div id="filter-panel">
       <h2>Filtros</h2>
       <label for="search-name">Buscar por nome:</label>
-      <input type="text" id="search-name" />
+      <input type="text" id="search-name" placeholder="Nome" />
 
-      <label for="search-id">ID:</label>
-      <input type="text" id="search-id" />
+      <div class="input-row">
+        <div class="input-wrapper">
+          <label for="search-id">ID:</label>
+          <input type="text" id="search-id" placeholder="ID" />
+        </div>
+        <div class="input-wrapper">
+          <label for="search-processo">Processo:</label>
+          <input type="text" id="search-processo" placeholder="Processo" />
+        </div>
+      </div>
 
-      <label for="search-processo">Processo:</label>
-      <input type="text" id="search-processo" />
-
-      <label for="search-ano">Ano:</label>
-      <select id="search-ano" placeholder="Ano"></select>
+      <div class="input-row">
+        <div class="input-wrapper">
+          <label for="search-ano">Ano:</label>
+          <select id="search-ano"></select>
+        </div>
+        <div class="input-wrapper">
+          <label for="search-uf">UF:</label>
+          <select id="search-uf">
+            <option value="">Selecione a UF</option>
+            <option value="AC">AC</option>
+            <option value="AL">AL</option>
+            <option value="AP">AP</option>
+            <option value="AM">AM</option>
+            <option value="BA">BA</option>
+            <option value="CE">CE</option>
+            <option value="DF">DF</option>
+            <option value="ES">ES</option>
+            <option value="GO">GO</option>
+            <option value="MA">MA</option>
+            <option value="MT">MT</option>
+            <option value="MS">MS</option>
+            <option value="MG">MG</option>
+            <option value="PA">PA</option>
+            <option value="PB">PB</option>
+            <option value="PR">PR</option>
+            <option value="PE">PE</option>
+            <option value="PI">PI</option>
+            <option value="RJ">RJ</option>
+            <option value="RN">RN</option>
+            <option value="RS">RS</option>
+            <option value="RO">RO</option>
+            <option value="RR">RR</option>
+            <option value="SC">SC</option>
+            <option value="SP">SP</option>
+            <option value="SE">SE</option>
+            <option value="TO">TO</option>
+          </select>
+        </div>
+      </div>
 
       <label for="search-fase">Fase:</label>
-      <input type="text" id="search-fase" />
+      <select id="search-fase">
+        <option value="">Selecione a fase</option>
+        <option value="RECONHECIMENTO GEOLÓGICO">
+          Reconhecimento Geológico
+        </option>
+        <option value="REQUERIMENTO DE PESQUISA">
+          Requerimento de Pesquisa
+        </option>
+        <option value="AUTORIZAÇÃO DE PESQUISA">Autorização de Pesquisa</option>
+        <option value="DIREITO DE REQUERER A LAVRA">
+          Direito de Requerer a Lavra
+        </option>
+        <option value="REQUERIMENTO DE LAVRA">Requerimento de Lavra</option>
+        <option value="CONCESSÃO DE LAVRA">Concessão de Lavra</option>
+        <option value="REQUERIMENTO DE LAVRA GARIMPEIRA">
+          Requerimento de Lavra Garimpeira
+        </option>
+        <option value="LAVRA GARIMPEIRA">Lavra Garimpeira</option>
+        <option value="REQUERIMENTO DE LICENCIAMENTO">
+          Requerimento de Licenciamento
+        </option>
+        <option value="LICENCIAMENTO">Licenciamento</option>
+        <option value="REQUERIMENTO DE REGISTRO DE EXTRAÇÃO">
+          Requerimento de Registro de Extração
+        </option>
+        <option value="REGISTRO DE EXTRAÇÃO">Registro de Extração</option>
+        <option value="MANIFESTO DE MINA">Manifesto de Mina</option>
+        <option value="APTO PARA DISPONIBILIDADE">
+          Apto para Disponibilidade
+        </option>
+        <option value="DISPONIBILIDADE">Disponibilidade</option>
+        <option value="DADO NÃO CADASTRADO">Dados não cadastrados</option>
+      </select>
 
       <label for="search-subs">Substância:</label>
-      <input type="text" id="search-subs" />
+      <input type="text" id="search-subs" placeholder="Subs" />
 
       <label for="search-uso">Uso:</label>
-      <input type="text" id="search-uso" />
-
-      <label for="search-uf">UF:</label>
-      <input type="text" id="search-uf" />
+      <input type="text" id="search-uso" placeholder="Uso" />
 
       <label for="search-fid">FID:</label>
-      <input type="number" id="search-fid" />
+      <input type="number" id="search-fid" placeholder="FID" />
 
       <button id="apply-filters">Aplicar Filtros</button>
     </div>

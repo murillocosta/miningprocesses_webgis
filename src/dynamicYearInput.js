@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
   searchAnoSelect.appendChild(optionEmpty);
 
   // Adicionar as opções de ano de 1930 até o ano atual
-  for (let year = 1930; year <= currentYear; year++) {
+  for (let year = 1941; year <= currentYear; year++) {
     let option = document.createElement("option");
     option.value = year;
     option.textContent = year;
